@@ -45,7 +45,7 @@ check_hostname_opts(Host0) ->
    },
   SslOpts = [{verify, verify_peer},
              {depth, 100},
-             {cacerts, certifi:cacerts()},
+             {cacertfile, certifi:cacertfile()},
              {partial_chain, fun partial_chain/1},
              {verify_fun, VerifyFun}],
 
